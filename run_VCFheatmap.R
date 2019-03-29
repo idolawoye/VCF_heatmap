@@ -40,3 +40,5 @@ genotype[!is.finite(genotype)] <- 0
 png(file = "heatmap.png", width=960, height=960, units="px", pointsize=24)
 heatmap(genotype, scale="row",col=coul, xlab = "Genomes", ylab = "SNPs")
 dev.off()
+
+noquote("DONE.")
